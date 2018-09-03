@@ -2,20 +2,24 @@
   "name": "simple-react-full-stack",
   "version": "1.0.0",
   "description": "Boilerplate to build a full stack web application using React, Node.js, Express and Webpack.",
-  "main": "src/server/index.js",
+  "main": "src/server/web-api-auth-examples/authorization_code/app.js",
   "scripts": {
-    "start": "node src/server/index.js",
+    "start": "node src/server/web-api-auth-examples/authorization_code/app.js",
     "build": "webpack --mode production",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
-    "server": "nodemon src/server/index.js",
+    "server": "nodemon src/server/web-api-auth-examples/authorization_code/app.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Sandeep Raveesh",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
     "express": "^4.16.3",
+    "querystring": "^0.2.0",
     "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "react-dom": "^16.3.1",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

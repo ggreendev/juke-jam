@@ -13,13 +13,10 @@ class Host extends Component {
     if (token) {
       spotifyApi.setAccessToken(token);
     }
-
     this.state = {
       loggedIn: token ? true : false,
       playlists: []
     }
-
-    this.getFinalPlaylist = this.getFinalPlaylist.bind(this);
   }
 
   /**
@@ -50,21 +47,12 @@ class Host extends Component {
     )
   }
 
-  getFinalPlaylist(){
-  spotifyApi.getPlaylist()
-    .then((response) => {
-        console.log(response);
-      }
-    )
-  }
-
   // lifecycle hook runs after the component output has been rendered to the DOM
   componentDidMount() {
     if (this.state.loggedIn) {
       this.getPlaylists();
     }
   }
-
 
   render() {
     const header = this.state.loggedIn ? <div>Choose a playlist from below:</div> : <a href='http://localhost:8888'>Login to Spotify</a>
@@ -80,6 +68,5 @@ class Host extends Component {
     );
   }
 }
-
 
 export default Host;

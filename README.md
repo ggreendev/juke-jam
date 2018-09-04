@@ -8,7 +8,7 @@ The scenario is this: you're at a party, and you're not happy with the songs tha
 
 This was what sparked the idea behind this project: an app that could be used at any social event or casual hangout. It would also be a really nice app to use on a road trip. Yet it turns out that this idea isn't all that original. I found that the ideal version of this, called *Outloud*, has already been made and can be found [here](https://outloud.dj/).
 
-Nonetheless, though not even remotely as useful as *Outloud*, this is a project that introduces me to React and Express. I also thought this would be a good chance to again play with Spotify's Web API, since I use Spotify almost every single day.
+Nonetheless, though not even remotely as useful as *Outloud*, this is a project that introduces me to React and Express. I also thought this would be a good chance to again play with Spotify's Web API, since I use Spotify almost every single day. This is definitely still a work in progress!
 
 ## Built with
 
@@ -17,7 +17,7 @@ Nonetheless, though not even remotely as useful as *Outloud*, this is a project 
 
 ## How to run
 
-```npm run dev```
+```npm run dev``` (development mode)
 
 ## Acknowledgements and Resources
 

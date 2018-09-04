@@ -19,7 +19,11 @@
     "querystring": "^0.2.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
-    "request": "^2.88.0"
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "request": "^2.88.0",
+    "spotify-web-api-js": "^1.1.0",
+    "spotify-web-api-node": "^3.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

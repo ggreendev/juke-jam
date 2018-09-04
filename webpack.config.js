@@ -8,7 +8,7 @@ module.exports = {
   entry: './src/client/index.js',
   output: {
     path: path.join(__dirname, outputDirectory),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -30,6 +30,7 @@ module.exports = {
     ]
   },
   devServer: {
+    historyApiFallback: true,
     port: 3000,
     open: true,
     proxy: {

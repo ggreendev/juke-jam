@@ -6,7 +6,7 @@ Social jukebox web app that integrates Spotify's Web API. The name of the projec
 
 The scenario is this: you're at a party, and you're not happy with the songs that are being played. You think that this party would be a lot better if there was a way for everyone to send song requests to the DJ, and let everyone vote for the song to be played next.
 
-This was what sparked the idea behind this project: an app that could be used at any social event or casual hangout. It would also be really nice app to use on a road trip. Yet it turns out that this idea isn't all that original. I found that the ideal version of this, called *Outloud*, has already been made and can be found [here](https://outloud.dj/).
+This was what sparked the idea behind this project: an app that could be used at any social event or casual hangout. It would also be a really nice app to use on a road trip. Yet it turns out that this idea isn't all that original. I found that the ideal version of this, called *Outloud*, has already been made and can be found [here](https://outloud.dj/).
 
 Nonetheless, though not even remotely as useful as *Outloud*, this is a project that introduces me to React and Express. I also thought this would be a good chance to again play with Spotify's Web API, since I use Spotify almost every single day.
 

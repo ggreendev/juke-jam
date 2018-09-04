@@ -5,8 +5,8 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        
-        <a href="http://localhost:8888">Login with Spotify</a>
+        <h1>Juke Jam - A Social Jukebox</h1>
+        <a href="http://localhost:8888">Get Started</a>
       </div>
     );
   }

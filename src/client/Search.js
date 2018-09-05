@@ -16,6 +16,8 @@ class Search extends Component {
       loggedIn: token ? true : false,
       tracks: []
     }
+    // this binding is necessary to make `this` work in the callback
+    this.getTracks = this.getTracks.bind(this);
   }
 
   /**
@@ -34,7 +36,8 @@ class Search extends Component {
 
   // get Spotify user's playlist with API call
   getTracks(){
-  spotifyApi.searchTracks('Love')
+    let searchTerm = document.getElementById('text').value;
+    spotifyApi.searchTracks(searchTerm)
     .then((response) => {
       //console.log(response);
        let data = response.tracks.items;
@@ -51,10 +54,18 @@ class Search extends Component {
   }
 
   render() {
-    const header = this.state.loggedIn ? <div>Choose a track from below:</div> : <a href="http://localhost:8888">Login to Spotify</a>
+    // NOTE: user does not necessarily need authentication to search for songs
     return (
       <div className="main">
-        {header}
+        <div>
+          <h1>Search for a song you want to hear played:</h1>
+        </div>
+        <div>
+          <form>
+            <input type="text" id="text"/>
+            <input type="button" value="Submit" onClick={this.getTracks}/>
+          </form>
+        </div>
         <div>
          <ul>
           {this.state.tracks.map((track) => <li key={track.id}> {track.name} </li>)}

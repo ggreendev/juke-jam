@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Link from 'react-router';
+import Link from 'react-router-dom';
 
 import SpotifyWebApi from 'spotify-web-api-js';
 const spotifyApi = new SpotifyWebApi();
 
 class Host extends Component {
-  constructor(props){
-    super(props);
+  constructor(){
+    super();
     const params = this.getHashParams();
     // store access token from Spotify
     const token = params.access_token;
@@ -55,14 +55,14 @@ class Host extends Component {
   }
 
   render() {
-    const header = this.state.loggedIn ? <div>Choose a playlist from below:</div> : <a href='http://localhost:8888'>Login to Spotify</a>
+    const header = this.state.loggedIn ? <div>Choose a playlist from below:</div> : <a href="http://localhost:8888">Login to Spotify</a>
     return (
       <div className="main">
         {header}
         <div>
-        <ul>
-         {this.state.playlists.map((playlist) => <li key={playlist.key}> {playlist.name} </li>)}
-        </ul>
+         <ul>
+          {this.state.playlists.map((playlist) => <li key={playlist.key}> {playlist.name} </li>)}
+         </ul>
         </div>
       </div>
     );

@@ -6,7 +6,7 @@ export default class App extends Component {
     return (
       <div>
         <h1>Juke Jam - A Social Jukebox</h1>
-        <a href="http://localhost:8888">Get Started</a>
+        <a href="/home">Get Started</a>
       </div>
     );
   }
